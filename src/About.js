@@ -1,14 +1,22 @@
 import React from "react";
+import { NavLink, useNavigate} from "react-router-dom";
+import Header from "./Header";
+ 
 
 function About(){
-    return(
-        <>
-        <h1>About Component</h1>
-        <h1>About Us</h1>
-        <h1>About us Page :</h1>
- 
-        </>
+    const naviagte = useNavigate();
 
+    const goContact = () =>{
+        naviagte("/")
+    }
+    return(
+        <>   
+        <Header/>
+        <h1>ABOUT COMPONENTs</h1>
+        <button onClick={goContact}>Go To HOME</button>
+         
+        </>
     )
 }
 export default About;
+ 

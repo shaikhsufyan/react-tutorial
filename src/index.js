@@ -1,18 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import Home from './Home'
-import About from './About'
- 
+import ReactDOM from 'react-dom/client'; 
+import App from './App';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
- 
 root.render(
   <React.StrictMode>
-  <Home/>
-  <About/>
-  <About/>  
-  <About/>
-  
-
+   <App/>
   </React.StrictMode>
 );
  

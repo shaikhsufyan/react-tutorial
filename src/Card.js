@@ -10,8 +10,7 @@ function Card(props){
             <img src={props.img} alt=""/>
             <h3>Nature {props.title} Image</h3>
         </div>
-         
-
+   
         </>
     )
 }
